@@ -1,0 +1,178 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#navbar header{
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 1rem 0;
+    padding:0 1rem;
+}
+
+#navbar a{
+    text-decoration: none;
+    color:black;
+    display: block;
+    height: 40px;
+}
+
+#navbar a:hover{
+    color: white;
+    background-color: #00820d;
+    transition: 0.3s;
+}
+
+#navbar ul{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-left: 0;
+    overflow-x: auto;
+    height: 85%;
+}
+
+#navbar li{
+    list-style: none;
+    border-top: solid gray 2px;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 1rem;
+    text-align: left;
+}
+
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background-color: rgb(230, 230, 230);
+    border-right: solid 5px #497049;
+}
+
+#navbar li:last-child{
+    border: none;
+}
+
+
+/* =======================main doc========================= */
+
+#main-doc{
+    color: rgb(75, 75, 75);
+    margin-left: 300px;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    overflow-x: hidden;
+}
+
+
+#main-doc header{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:black;
+    text-decoration:underline;
+    margin-top:  3rem;
+    margin-bottom: 1.5rem;
+}
+
+#main-doc h3{
+    text-indent: 2rem;
+    color: #00820d;
+    
+    letter-spacing: 1px;
+}
+
+#main-doc p{
+    text-indent: 1.5rem;
+}
+
+#main-doc code{
+    background-color:rgb(85, 85, 85);
+    color: white;
+    border-radius:10px;
+    border-left: #00820d solid 10px;
+    display: block;
+    white-space: pre-line;
+    line-height: 1.5em;
+    padding: 10px;
+    padding-left: 1.5rem;
+    /* text-align: left; */
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+span{
+    color: #00c414;
+}
+
+.red{
+    color: red;
+}
+
+#main-doc code:hover > span:not(.red){
+    transition: 0.3s;
+    color: #bc57ff;
+}
+
+#main-doc code:hover{
+        border-left:#9900ff solid 10px; 
+        transition: 0.3s;
+}
+
+td, th {
+
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.colored-tr{
+    background-color: rgb(222, 222, 222);
+}
+
+
+.table-head{
+    color: white;
+    background-color: #00820d;
+    border: solid 3px #00820d;
+}
+
+table{
+    border: solid 3px lightgray;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+@media only screen and (max-width: 815px) {
+
+#navbar{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    border-right: none;
+}
+
+#navbar ul{
+    border: #00820d 5px solid;
+    height: 14rem;
+    background-color: rgb(230, 230, 230);
+}
+
+#navbar li:last-child{
+    display: none;
+}
+
+#main-doc{
+    margin-top: 300px;
+    margin-left: 20px;
+}
+
+.table-div{
+    overflow-x: auto;
+}
+
+
+}

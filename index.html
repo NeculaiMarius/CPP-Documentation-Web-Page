@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Documantation page</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+
+<nav id="navbar">
+    <header>C++ Documentation page</header>
+    <ul class="nav_list">
+        <li><a href="#Introduction" class="nav-link">C++ Introduction</a></li>
+        <li><a href="#C_and_C++" class="nav-link">C and C++</a></li>
+        <li><a href="#Hello_world" class="nav-link">Hello world</a></li>
+        <li><a href="#C++_Variables" class="nav-link">C++ Variables</a></li>
+        <li><a href="#Declaring_Variables" class="nav-link">Declaring Variables</a></li>
+        <li><a href="#C++_User_Input" class="nav-link">C++ User Input</a></li>
+        <li><a href="#Operators" class="nav-link">Operators</a></li>
+        <li><a href="#The_if_Statement" class="nav-link">The if Statement</a></li>
+        <li><a href="#The_else_Statement" class="nav-link">The else Statement</a></li>
+        <li><a href="#The_else_if_Statement" class="nav-link">The else if Statement</a></li>
+        <li><a href="#C++_While_Loop" class="nav-link">C++ While Loop</a></li>
+        <li><a href="#The_Do/While_Loop" class="nav-link">The Do/While Loop</a></li>
+        <li><a href="#C++_For_Loop" class="nav-link">C++ For Loop</a></li>
+        <li><a href="#Functions" class="nav-link">Functions</a></li>
+        <li><a href="#Function_Declaration_and_Definition">Function Declaration</a></li>
+        <li><a href="#References">References</a></li>
+        <li></li>
+    </ul>
+</nav>
+
+<main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+        <header>C++ Introduction</header>
+        <h3>What is C++?</h3>
+        <p>C++ is a cross-platform language that can be used to create high-performance applications.</p>
+        <p>C++ was developed by Bjarne Stroustrup, as an extension to the C language.</p>
+        <p>C++ gives programmers a high level of control over system resources and memory.</p>
+        <h3>Why use C++?</h3>
+        <p>You should use C++ for its high performance, suitability for system-level programming, embedded systems, game development, cross-platform capabilities, and support for large-scale software. It also offers a vast library ecosystem, making it versatile and widely used in various industries.</p>
+    </section>
+
+    <section class="main-section" id="C_and_C++">
+        <header>C and C++</header>
+        <p>C++ is an extension of C, adding features like object-oriented programming and a larger standard library. C is used for low-level programming, while C++ is chosen for larger, more complex projects.</p>
+        <h3>Differences</h3>
+        <p>One of the most significant differences is that C++ supports object-oriented programming (OOP) while C does not. </p>
+        <p>C++ has a more extensive standard library compared to C.</p>
+        <p>C++ is not always fully backward compatible with C. While you can often use C code within a C++ program.</p>
+        <p>C is commonly used for low-level system programming and when you need maximum control over system resources. C++ is preferred for larger, more complex projects</p>
+        <h3>Similarities</h3>
+        <p>C and C++ share a similar syntax, especially when it comes to fundamental language constructs like loops, conditionals, and data types. If you know C, you can easily understand and write C++ code.</p>
+        <p>Both languages allow for low-level memory manipulation and direct hardware interaction, making them suitable for system-level and embedded programming.</p>
+        <p>C and C++ are known for their high performance, as they provide fine-grained control over memory and system resources.</p>
+    </section>
+
+    <section class="main-section" id="Hello_world">
+        <header>Hello world</header>
+        <p>To get started with writing C++, write your first "Hello world" C++ code:</p>
+
+        <code>#include &ltiostream&gt
+using namespace std;
+
+int main() 
+{
+    cout << "Hello, World!" << endl;
+    return 0;
+}
+        </code>
+            <p>You can use an online compuiler for C++ to run the code and watch it unfold in your browser!</p>
+    </section>
+
+    <section class="main-section" id="C++_Variables">
+        <header>C++ Variables</header>
+        <p>Variables are containers for storing data values.</p>
+        <p>In C++, there are different types of variables (defined with different keywords), for example:</p>
+        <ul>
+            <li>int - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+            <li>double - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+            <li>char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+            <li>string - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+            <li>bool - stores values with two states: true or false</li>
+        </ul>
+    </section>
+
+    <section class="main-section" id="Declaring_Variables">
+        <header>Declaring Variables</header>
+
+        <h3>Syntax</h3>
+        <p>To create a variable, specify the type and assign it a value.</p>
+        <code>type variableName = value;</code>
+
+        <h3>Example</h3>
+        <p>Create a variable called myNum of type int and assign it the value 15:</p>
+        <code>int myNum = 15; cout << myNum;</code>
+        <p>You can also declare a variable without assigning the value, and assign the value later:</p>
+        <code>int myNum;
+            myNum = 15;
+            cout << myNum;</code>
+        <h3>Example of other types of variables</h3>
+        <code>
+int myNum = 5;               <span>// Integer (whole number without decimals)</span>
+double myFloatNum = 5.99;    <span>// Floating point number (with decimals)</span>
+char myLetter = 'D';         <span>// Character</span>
+string myText = "Hello";     <span>// String (text)</span>
+bool myBoolean = true;       <span>// Boolean (true or false)</span>
+</code>
+
+    </section>
+
+    <section class="main-section" id="C++_User_Input">
+        <header>C++ User Input</header>
+        <p>You learned that cout is used to output (print) values. Now we will use cin to get user input.
+            cin is a predefined variable that reads data from the keyboard with the extraction operator (>>).<br>
+            In the following example, the user can input a number, which is stored in the variable x. Then we print the value of x:</p>
+<code>int x; 
+cout << "Type a number: "; <span>// Type a number and press enter</span>
+cin >> x; <span>// Get user input from the keyboard</span>
+cout << "Your number is: " << x; <span>// Display the input value</span>
+</code>
+    </section>
+
+    <section class="main-section" id="Operators">
+        <header>Operators</header>
+        <p>C++ supports a wide range of operators that allow you to perform various operations on data. Here are some examples:</p>
+        <p>Arithmetic Operators:</p>
+        <ul>
+            <li>' + ' (Addition)</li>
+            <li>' - ' (Subtraction)</li>
+            <li>' * ' (Multiplication)</li>
+            <li>' / ' (Division)</li>
+            <li>' % ' (Modulus, remainder of division)</li>
+        </ul>
+
+        <p>Increment and Decrement Operators:</p>
+        <ul>
+            <li>' ++ ' (Increment)</li>
+            <li>' -- ' (Decrement)</li>
+        </ul>
+
+        <p>Comparison Operators:</p>
+        <ul>
+            <li>' == ' (Equal to)</li>
+            <li>' != ' (Not equal to)</li>
+            <li>' < ' (Less than)</li>
+            <li>' > ' (Greater than)</li>
+            <li>' <= ' (Less than or equal to)</li>
+            <li>' >= ' (Greater than or equal to)</li>
+        </ul>
+
+        <p>Logical Operators:</p>
+        <ul>
+            <li>' && ' (Logical AND)</li>
+            <li>' || ' (Logical OR)</li>
+            <li>' ! '(Logical NOT)</li>
+        </ul>
+
+        <h3>Arithmetic operators</h3>
+        <p>Arithmetic operators are used to perform common mathematical operations.</p>
+        <div class="table-div">
+        <table>
+            <tr class="table-head">
+                <th>Operator</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>Addition</td>
+                <td>Adds togheter two values</td>
+                <td>x + y</td>
+            </tr>
+            <tr class="colored-tr">
+                <td>-</td>
+                <td>Substraction</td>
+                <td>Subtracts one value from another</td>
+                <td>x - y</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Multiplication</td>
+                <td>Multiplies two values</td>
+                <td>x * y</td>
+            </tr>
+            <tr class="colored-tr">
+                <td>/</td>
+                <td>Division</td>
+                <td>Divides one value by another</td>
+                <td>x / y</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Modulus</td>
+                <td>Returns the division remainder</td>
+                <td>x % y</td>
+            </tr>
+            <tr class="colored-tr">
+                <td>++</td>
+                <td>Increment</td>
+                <td>Increases the value of a variable by 1</td>
+                <td>++x</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>Decrement</td>
+                <td>Decreases the value of a variable by 1</td>
+                <td>--x</td>
+            </tr>
+        </table>
+        </div>
+    </section>
+
+    <section class="main-section" id="The_if_Statement">
+        <header>The if Statement</header>
+        <p>Use the if statement to specify a block of C++ code to be executed if a condition is true.</p>
+
+        <h3>Syntax</h3>
+        <code>if (condition) {
+            <span>// block of code to be executed if the condition is true</span>
+            }
+        </code>
+
+        <h3>Examples</h3>
+
+        <p>In the example below, we test two values to find out if 20 is greater than 18. If the condition is true, print some text:</p>
+        <code>if (20 > 18) 
+            {
+                cout << "20 is greater than 18";
+            }
+        </code>
+
+        <p>We can also test variables:</p>
+        <code>int x = 20;
+            int y = 18;
+            if (x > y) 
+            {
+            cout << "x is greater than y";
+            }
+        </code>
+    </section>
+
+    <section class="main-section" id="The_else_Statement">
+        <header>The else Statement</header>
+        <p>Use the else statement to specify a block of code to be executed if the condition is false.</p>
+        <h3>Syntax</h3>
+        
+        <code>if (condition) {
+    <span>// block of code to be executed if the condition is true</span>
+} else {
+    <span>// block of code to be executed if the condition is false</span>
+}
+        </code>
+
+        <h3>Example</h3>
+        
+<code>int time = 20;
+if (time < 18) {
+    cout << "Good day.";
+} else {
+    cout << "Good evening.";
+}
+    <span>// Outputs "Good evening."</span>></code>
+
+    <p>In the example above, time (20) is greater than 18, so the condition is false. Because of this, we move on to the else condition and print to the screen "Good evening". If the time was less than 18, the program would print "Good day".</p>
+    </section>
+
+    <section class="main-section" id="The_else_if_Statement">
+        <header>The else if Statement</header>
+        <p>Use the else if statement to specify a new condition if the first condition is false.</p>
+        <h3>Syntax</h3>
+        <code>if (condition1) {
+    <span>// block of code to be executed if condition1 is true</span>
+} else if (condition2) {
+    <span>// block of code to be executed if the condition1 is false and condition2 is true</span>
+} else {
+    <span>// block of code to be executed if the condition1 is false and condition2 is false</span>
+}
+        </code>
+
+        <h3>Example</h3>
+        <code>int time = 22;
+    if (time < 10) {
+cout << "Good morning.";
+    } else if (time < 20) {
+cout << "Good day.";
+    } else {
+cout << "Good evening.";
+    }
+    <span>// Outputs "Good evening."</span>
+        </code>
+
+    </section>
+    
+    <section class="main-section" id="C++_While_Loop">
+        <header>C++ While Loop</header>
+        <p>The while loop loops through a block of code as long as a specified condition is true:</p>
+        <h3>Syntax</h3>
+        <code>while (condition) {
+            <span>// code block to be executed</span>
+        }</code>
+
+        <h3>Example</h3>
+        <code>int i = 0;
+while (i < 5) {
+    cout << i << "\n";
+    i++;
+}
+        </code>
+
+        <p>In the example , the code in the loop will run, over and over again, as long as a variable (i) is less than 5.</p>
+    </section>
+
+    <section class="main-section" id="The_Do/While_Loop">
+        <header>The Do/While Loop</header>
+        <p>The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+        <h3>Syntax</h3>
+        <code>do {
+            <span>// code block to be executed</span>
+        }
+        while (condition);
+        </code>
+
+        <h3>Example</h3>
+        <code>int i = 0;
+do {
+    cout << i << "\n";
+    i++;
+}
+while (i < 5);
+        </code>
+
+        <p>The example uses a do/while loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:</p>
+    </section>
+
+
+    <section class="main-section" id="C++_For_Loop">
+        <header>C++ For Loop</header>
+        <p>When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:</p>
+        <h3>Syntax</h3>
+        <code>for (statement 1; statement 2; statement 3) {
+            <span>// code block to be executed</span>
+        }</code>
+
+        <p>Statement 1 is executed (one time) before the execution of the code block.</p>
+        <p>Statement 2 defines the condition for executing the code block.</p>
+        <p>Statement 3 is executed (every time) after the code block has been executed.</p>
+
+        <h3>Example</h3>
+        <code>for (int i = 0; i < 5; i++) {
+    cout << i << "\n";
+}
+        </code>
+
+        <p>The example below will print the numbers 0 to 4:</p>
+
+        <p>
+            Statement 1 sets a variable before the loop starts (int i = 0). <br>
+
+            Statement 2 defines the condition for the loop to run (i must be less than 5). If the condition is true, the loop will start over again, if it is false, the loop will end. <br>
+            
+            Statement 3 increases a value (i++) each time the code block in the loop has been executed. <br>
+        </p>
+    </section>
+
+    <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>
+            A function is a block of code which only runs when it is called. <br>
+            You can pass data, known as parameters, into a function. <br>
+            Functions are used to perform certain actions, and they are important for reusing code: Define the code once, and use it many times.
+        </p>
+
+        <h3>Create a Function</h3>
+        <p>
+            C++ provides some pre-defined functions, such as main(), which is used to execute code. But you can also create your own functions to perform certain actions. <br>
+            To create (often referred to as declare) a function, specify the name of the function, followed by parentheses ():
+        </p>
+
+    <h3>Syntax</h3>
+    <code>void myFunction() {
+        <span>// code to be executed</span>
+        }
+    </code>
+
+    <ul>
+        <li>myFunction() is the name of the function</li>
+        <li>void means that the function does not have a return value.</li>
+        <li>inside the function (the body), add code that defines what the function should do</li>
+    </ul>
+
+    <h3>Call a Function</h3>
+
+    <p>Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are called.</p>
+    <p>To call a function, write the function's name followed by two parentheses () and a semicolon ;</p>
+    <p>In the following example, myFunction() is used to print a text (the action), when it is called:</p>
+
+    <h3>Example</h3>
+<code><span>// Create a function</span>
+void myFunction() {
+    cout << "I just got executed!";
+}
+
+int main() {
+    myFunction();   <span>// call the function</span>
+    return 0;
+}
+
+<span>// Outputs "I just got executed!"</span>
+        </code>
+    
+
+    <p>A function can be called multiple times:</p>
+<code>void myFunction() {
+    cout << "I just got executed!\n";
+}
+
+int main() {
+    myFunction();
+    myFunction();
+    myFunction();
+    return 0;
+}
+
+<span>// I just got executed!
+// I just got executed!
+// I just got executed!</span></code>
+    
+
+    </section>
+
+    <section class="main-section" id="Function_Declaration_and_Definition">
+        <header>Function Declaration and Definition</header>
+        <p>A C++ function consist of two parts:</p>
+        <ul>
+            <li>Declaration: the return type, the name of the function, and parameters (if any)</li>
+            <li>Definition: the body of the function (code to be executed)</li>
+        </ul>
+
+        <code>void myFunction() { // declaration
+            <span>// the body of the function (definition)</span>
+            }
+        </code>
+
+        <p>Note: If a user-defined function, such as myFunction() is declared after the main() function, an error will occur:</p>
+        
+        <h3>Example</h3>
+        
+<code>int main() {
+    myFunction();
+    return 0;
+}
+
+void myFunction() {
+    cout << "I just got executed!";
+}
+<span class="red">// Error</code></span>
+</code>
+
+    </section>
+
+    <section class="main-section" id="References">
+        <header>References</header>
+        <ul>
+            <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/cpp/cpp_intro.asp">W3 Schools</a><span class="red">!!!</span></li>
+            <li>This documentation page is made for practicing HTML and CSS skills and it is not a reliable source of information for learning C++ <span class="red">!!!</span></li>
+        </ul>
+    </section>
+
+
+
+</main>
+
+
+</html>
